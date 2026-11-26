@@ -1,0 +1,3 @@
+# Integration overlay — not a verified release
+
+The original local files were not accessible and the remote repository was empty at inspection. These files are proposed replacement/additional content, not a patch against a known commit. Before replacing SKILL.md, compare with the current local file and preserve any existing behavior, references, metadata and supported installation requirements not represented here. The new references can coexist with the existing six; consolidate only after checking all links. The new member guide supplements, not replaces, the actual platform-specific installation instructions. Rebuild and verify the existing distribution from the integrated source. Do not publish this overlay as a tested installation package.
