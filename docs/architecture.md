@@ -21,7 +21,7 @@ Skill 采用开放 Agent Skills 规范的目录形式：必需的 `SKILL.md` 加
 
 ## GitHub 能力选择
 
-GitHub CLI 支持登录状态、仓库、Issue、PR、检查、审阅及 API 访问；它复用操作系统凭据存储时不会要求用户学命令行（Codex 执行命令）。Codex GitHub 连接器可提供仓库、Issue、PR、审阅、分支和评论等操作，但当前环境中的工具集合会变化，Projects、Actions、设置和权限可能不完整。Skill 因此要求运行时发现能力，错误或缺失权限必须透明报告，不能把未查到说成“没有”。
+GitHub CLI 支持登录状态、仓库、Issue、PR、检查、审阅及 API 访问；它复用操作系统凭据存储。Codex GitHub 连接器可提供仓库、Issue、PR、审阅、分支和评论等操作，但当前环境中的工具集合会变化，Projects、Actions、设置和权限可能不完整。Skill 要求运行时发现能力，错误或缺失权限必须透明报告。重要写入前比对连接器身份、`gh auth status` 与本地项目地址；本地 Git 作者设置不代表远端登录身份。
 
 GitHub 原生机制承担团队共享状态：Issues/Projects 管任务，PR/Reviews 交付审阅，Actions/Checks 显示自动验证，Rulesets/branch protection 执行合并要求，CODEOWNERS 指明代码责任人。若仓库未配置这些功能，Skill 不擅自创建制度。
 

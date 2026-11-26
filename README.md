@@ -36,9 +36,10 @@ github-collaborator/
 
 ```sh
 python3 scripts/validate_skill.py
+python3 scripts/build_package.py
 ```
 
-检查只验证 Skill 包装结构、必需元数据和文档引用，不会连接或写入 GitHub。
+前者检查目录、版本元数据和必需资源；后者生成带版本的独立包、校验资源并输出 SHA-256。固定时间戳确保同一源文件生成相同包。均不写入 GitHub。
 
 ## 规范与调研
 
